@@ -18,7 +18,7 @@ export class BookSeat implements Executable<Request, Response> {
     private readonly webinarRepository: IWebinarRepository,
     private readonly mailer: IMailer,
   ) {}
-  async execute({ webinarId, user }: Request): Promise<Response> {
+  async execute(payload: Request): Promise<Response> {
     return;
   }
 }
